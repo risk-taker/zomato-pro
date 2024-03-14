@@ -1,5 +1,4 @@
 import SearchBox from "./SearchBox";
-import styles from "./componentStyle.module.css";
 import React from "react";
 
 const NavBar = () => {
