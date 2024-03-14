@@ -10,7 +10,8 @@ const NavBar = () => {
         }}
         className="w-full h-[32rem]  "
       >
-        <nav className="container mx-auto xl:w-3/5 md:w-full">
+        {/*container mx-auto mr-0 xl:w-3/5 md:w-full  */}
+        <nav className="container mx-auto mr-0 xl:w-3/5 md:w-full ">
           <div className="flex justify-between">
             <div className="flex items-center mt-3 ">
               <svg
