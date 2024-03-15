@@ -16,7 +16,7 @@ const Dropdown = () => {
   };
 
   return (
-    <div className="flex items-center bg-white rounded">
+    <div className="flex items-center bg-white rounded drop-shadow-lg">
       {/* location icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const Dropdown = () => {
 
       <button
         onClick={toggleDropdown}
-        className="flex items-center justify-center ml-2 text-xs text-slate-500"
+        className="flex items-center justify-center ml-2 text-xs text-slate-500 w-max"
       >
         Buddha Colony, Patna{" "}
         {isOpen ? (
@@ -101,7 +101,7 @@ const Dropdown = () => {
           name="search"
           id="searchId"
           placeholder="Search for restaurant, cuisine or a dish"
-          className="p-3 w-[32rem] outline-none text-slate-700 text-sm rounded"
+          className="p-3 text-sm rounded outline-none pr-36 text-slate-700"
         />
       </div>
     </div>

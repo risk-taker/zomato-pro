@@ -2,6 +2,7 @@
 import React from "react";
 import Dropdown from "./Dropdown";
 
+{/* this contain main image all content */}
 const SearchBox = () => {
   return (
     <div className="flex items-center justify-center mt-24">
