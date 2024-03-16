@@ -1,9 +1,11 @@
 import React from "react";
 import CollectionCard from "./CollectionCard";
 
-const Collection = () => {
+const Collection = ({ orderOnline }) => {
   return (
-    <section className="container mx-auto mt-28 xl:w-3/5 md:w-full">
+    <section
+      className={`container mx-auto mt-28 xl:w-3/5 md:w-full ${orderOnline}`}
+    >
       <h1 className="text-3xl">Collections</h1>
       <div className="flex justify-between">
         <h1 className="mt-0 text-slate-600 sm:w-full">

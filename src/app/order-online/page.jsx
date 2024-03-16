@@ -1,4 +1,6 @@
 "use client";
+import Filter from "@/components/Filter";
+import Collection from "@/components/homePageComponent/Collection";
 import Image from "next/image";
 import { useState } from "react";
 import React from "react";
@@ -10,43 +12,47 @@ const orderOnline = () => {
     setIsDiningOut(!isDiningOut);
   }
   return (
-    <div className="container mx-auto mt-8 xl:w-3/5 md:w-full">
-      <div className="flex items-center">
-        {isDiningOut ? (
-          <SelectDiningOrDelivery
-            color={"color"}
-            method={"dining-out"}
-            text={"Dining Out"}
-            handleDiningOut={handleDiningOut}
-          />
-        ) : (
-          <SelectDiningOrDelivery
-            color="black"
-            method={"dining-out"}
-            text={"Dining Out"}
-            handleDiningOut={handleDiningOut}
-          />
-        )}
-        {!isDiningOut ? (
-          <SelectDiningOrDelivery
-            color={"color"}
-            method={"delivery"}
-            text={"Delivery"}
-            handleDiningOut={handleDiningOut}
-          />
-        ) : (
-          <SelectDiningOrDelivery
-            color={"black"}
-            method={"delivery"}
-            text={"Delivery"}
-            handleDiningOut={handleDiningOut}
-          />
-        )}
+    <>
+      <div className="container mx-auto mt-8 xl:w-3/5 md:w-full">
+        <div className="flex items-center">
+          {isDiningOut ? (
+            <SelectDiningOrDelivery
+              color={"color"}
+              method={"dining-out"}
+              text={"Dining Out"}
+              handleDiningOut={handleDiningOut}
+            />
+          ) : (
+            <SelectDiningOrDelivery
+              color="black"
+              method={"dining-out"}
+              text={"Dining Out"}
+              handleDiningOut={handleDiningOut}
+            />
+          )}
+          {!isDiningOut ? (
+            <SelectDiningOrDelivery
+              color={"color"}
+              method={"delivery"}
+              text={"Delivery"}
+              handleDiningOut={handleDiningOut}
+            />
+          ) : (
+            <SelectDiningOrDelivery
+              color={"black"}
+              method={"delivery"}
+              text={"Delivery"}
+              handleDiningOut={handleDiningOut}
+            />
+          )}
+        </div>
+        <hr className="h-[2px] bg-slate-200 mt-4" />
+        <button>submit</button>
       </div>
-        
-
+      <Collection orderOnline={"mt-[3rem]"} />
       
-    </div>
+        <Filter />
+    </>
   );
 };
 
