@@ -17,6 +17,8 @@ src
     ├── layout.js
     └──page.js
 ```
+
+
 | Path                  | Description                              |
 | --------------------- | ---------------------------------------- |
 | `/`        | The Next.js application for the website. |
