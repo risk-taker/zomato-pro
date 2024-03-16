@@ -12,4 +12,4 @@ Please read the [contributing guide](/CONTRIBUTING.md).
 
 ## License
 
-Licensed under the [MIT license](https://github.com/risk-taker/zomato-pro/LICENSE.md).
+Licensed under the [MIT license](https://github.com/risk-taker/zomato-pro/blob/main/LICENCE.md).
