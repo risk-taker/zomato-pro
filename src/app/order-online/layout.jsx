@@ -6,7 +6,6 @@ const layout = ({ children }) => {
     <>
       <OrderOnlineNavbar />
       <div>{children}</div>
-      <h1>hello world</h1>
     </>
   );
 };
