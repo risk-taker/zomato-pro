@@ -16,7 +16,11 @@ src
 └── app
     ├── layout.js
     └──page.js
-
+```
+| Path                  | Description                              |
+| --------------------- | ---------------------------------------- |
+| `/`        | The Next.js application for the website. |
+| `/order-online` | Redirect you to the order-online page    |
 
 
 ## Development
