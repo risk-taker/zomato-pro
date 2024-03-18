@@ -1,3 +1,4 @@
+"use client";
 import NavBar from "@/components/homePageComponent/NavBar";
 import LocalitiesCard from "@/components/homePageComponent/LocalitiesCard";
 import Collection from "@/components/homePageComponent/Collection";
@@ -5,6 +6,7 @@ import ContactMeBar from "@/components/homePageComponent/ContactMeBar";
 import ExploreMeCard from "@/components/homePageComponent/ExploreMeCard";
 import FooterComponent from "@/components/homePageComponent/FooterComponent";
 import Link from "next/link";
+import LoginModal from "@/components/LoginModal";
 
 
 export default function Home() {

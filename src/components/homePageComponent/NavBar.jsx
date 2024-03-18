@@ -1,3 +1,6 @@
+"use client";
+import LoginModal from "../LoginModal";
+import SignUpModal from "../SignUpModal";
 import SearchBox from "./SearchBox";
 import React from "react";
 
@@ -32,8 +35,8 @@ const NavBar = () => {
             <div className="flex justify-between w-1/2 mt-3 font-light text-white">
               <div>Investor Relations</div>
               <div>Add restaurant</div>
-              <div>Log in</div>
-              <div>Sign up</div>
+              <LoginModal />
+              <SignUpModal />
             </div>
           </div>
         </nav>
