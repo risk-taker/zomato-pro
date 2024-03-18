@@ -2,12 +2,12 @@ import React from "react";
 
 const TrendingDiningRestaurants = () => {
   return (
-    <div>
+    <div className="p-4 rounded-md hover:shadow-xl">
       <div>
         <img
           src="/order-online/downtown-cafe.png"
           alt="downtown-cafe"
-          className="w-[290px] h-[220px] object-cover rounded-2xl mt-8 "
+          className="w-[290px] h-[220px] object-cover rounded-2xl"
         />
       </div>
       <div className="flex items-center justify-between w-[290px] mt-2">

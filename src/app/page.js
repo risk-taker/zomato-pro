@@ -23,14 +23,16 @@ export default function Home() {
             </div>
           </div>
         </Link>
-
-        <div className="w-[538px] h-[238px] ml-4  border rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
-          <img src="/dining-image.png" alt="dining-online" className="w-full h-[10rem] object-cover rounded-md " />
-          <div className="m-4">
-            <h1>Dining</h1>
-            <h2>View the city's favourite dining venues</h2>
+        <Link href="/order-online/delivery">
+          <div className="w-[538px] h-[238px] ml-4  border rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+            <img src="/dining-image.png" alt="dining-online" className="w-full h-[10rem] object-cover rounded-md " />
+            <div className="m-4">
+              <h1>Dining</h1>
+              <h2>View the city's favourite dining venues</h2>
+            </div>
           </div>
-        </div>
+        </Link>
+
       </main>
       <Collection />
       <div className="container mx-auto mt-24 xl:w-3/5 md:w-full">

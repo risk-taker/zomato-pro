@@ -14,24 +14,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         {children}
         {/* Explore me section */}
-      <div className="bg-slate-50">
-        <div className="container pt-12 mx-auto xl:w-3/5 md:w-full">
-          <h1 className="text-2xl font-medium ">Explore options near me</h1>
-          <div className="grid gap-4 pb-12 mt-4">
-            <ExploreMeCard />
-            <ExploreMeCard />
-            <ExploreMeCard />
-            <ExploreMeCard />
+        <div className="bg-slate-50">
+          <div className="container pt-12 mx-auto xl:w-3/5 md:w-full">
+            <h1 className="text-2xl font-medium ">Explore options near me</h1>
+            <div className="grid gap-4 pb-12 mt-4">
+              <ExploreMeCard />
+              <ExploreMeCard />
+              <ExploreMeCard />
+              <ExploreMeCard />
+            </div>
           </div>
         </div>
-      </div>
-      {/* footer section */}
-      <div className="bg-slate-100">
-        <FooterComponent />
-      </div>
+        {/* footer section */}
+        <div className="bg-slate-100">
+          <FooterComponent />
+        </div>
       </body>
     </html>
   );
