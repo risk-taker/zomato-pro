@@ -1,4 +1,5 @@
 import Filter from "@/components/Filter";
+import LoginAndDeliveryButton from "@/components/LoginAndDeliveryButton";
 import Restaurants from "@/components/deliveryComponents/Restaurants";
 import Food from "@/components/deliveryComponents/food";
 import TrendingDiningRestaurants from "@/components/orderOnlinePageComponents/TrendingDiningRestaurants";
@@ -7,6 +8,10 @@ import React from "react";
 const page = () => {
   return (
     <div>
+      <LoginAndDeliveryButton />
+      <div className="container mx-auto mt-8 xl:w-3/5 md:w-full">
+        <hr className="h-[2px] bg-slate-200 mt-4" />
+      </div>
       <Filter />
       <div className="h-[18rem] bg-gray-50 mt-6">
         <div className="container pt-8 mx-auto xl:w-3/5 md:w-full">

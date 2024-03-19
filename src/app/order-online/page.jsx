@@ -1,5 +1,7 @@
 "use client";
 import Filter from "@/components/Filter";
+import LoginAndDeliveryButton from "@/components/LoginAndDeliveryButton";
+import OrderOnlineNavbar from "@/components/OrderOnlineNavbar";
 import Collection from "@/components/homePageComponent/Collection";
 import Banner from "@/components/orderOnlinePageComponents/Banner";
 import TrendingDiningRestaurants from "@/components/orderOnlinePageComponents/TrendingDiningRestaurants";
@@ -8,10 +10,10 @@ import { useState } from "react";
 import React from "react";
 
 const orderOnline = () => {
-
   return (
     <>
-      <div className="container mx-auto mt-8 xl:w-3/5 md:w-full">        
+      <LoginAndDeliveryButton />
+      <div className="container mx-auto mt-8 xl:w-3/5 md:w-full">
         <hr className="h-[2px] bg-slate-200 mt-4" />
       </div>
       <Collection orderOnline={"mt-[3rem]"} />

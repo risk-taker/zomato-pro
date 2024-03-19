@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Dropdown from "./homePageComponent/Dropdown";
 import Image from "next/image";
 import Link from "next/link";
+import LoginModal from "./LoginModal";
+import SignUpModal from "./SignUpModal";
+import LoginAndDeliveryButton from "./LoginAndDeliveryButton";
 
 const OrderOnlineNavbar = () => {
   const [isDiningOut, setIsDiningOut] = useState(true);
@@ -19,13 +22,15 @@ const OrderOnlineNavbar = () => {
           </Link>
           <Dropdown />
         </div>
-        <div className="flex font-light text-slate-500">
-          <button className="mr-6">Log in</button>
-          <button className="ml-3">Sign up</button>
+        <div className="flex gap-6 font-light text-slate-500">
+          <LoginModal />
+          <SignUpModal />
+          {/* <button className="mr-6">Log in</button>
+          <button className="ml-3">Sign up</button> */}
         </div>
       </div>
       <div>
-        <div className="container flex items-center mx-auto mt-8 xl:w-3/5 md:w-full">
+        {/* <div className="container flex items-center mx-auto mt-8 xl:w-3/5 md:w-full">
           {isDiningOut ? (
             <SelectDiningOrDelivery
               color={"color"}
@@ -56,7 +61,8 @@ const OrderOnlineNavbar = () => {
               handleDiningOut={handleDiningOut}
             />
           )}
-        </div>
+        </div> */}
+        {/* <LoginAndDeliveryButton /> */}
       </div>
     </>
   );

@@ -17,7 +17,8 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      {/* {inter.className} */}
+      <body className={`&{inter.className} min-w-fit`}>
         {children}
         {/* Explore me section */}
         <div className="bg-slate-50">
